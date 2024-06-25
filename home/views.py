@@ -8,10 +8,6 @@ def home(request):
     return render(request, 'home.html', context=teachers)
 
 
-def about(request):
-    return HttpResponse("This is my about page! (about/)")
-
-
 def projects(request):
     return HttpResponse("This is my projects page! (projects/)")
 
