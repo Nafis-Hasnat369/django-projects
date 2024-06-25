@@ -2,7 +2,14 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
+
+<!-- How to use dynamic URL -->
+<a href="{% url 'about' %}">Go to about page</a> <br>
+
+<!-- Loops in django -->
 {% for name in teachers %}
 <td>{{name}}</td><br>
 {% endfor %}
+
+<!-- Blocks -->
 {% endblock content %}
