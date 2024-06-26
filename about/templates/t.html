@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Teacher{% endblock title %}
+
+{% block content %}
+{% if teacher %}
+<h1>Teacher information</h1>
+{% else %}
+<h2>Empty DB!</h2>
+{% endif %}
+{% endblock content %}
