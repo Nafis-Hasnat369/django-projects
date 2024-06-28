@@ -3,13 +3,14 @@
 {% block title %}Form Data{% endblock title %}
 
 {% block content %}
-<form action="">
+<form action="" method="POST"> {% csrf_token %}
     <!-- <table>
         {% for field in form %}
         {{field.label_tag}} <br>
         {% endfor %}
     </table> -->
+
     {{form.as_p}}
-    <input type="button" value="Submit">
+    <input type="Submit" value="Submit">
 </form>
 {% endblock content %}
