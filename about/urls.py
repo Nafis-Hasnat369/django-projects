@@ -6,3 +6,4 @@ urlpatterns = [
     path('teacher/', views.teachers_info, name="teacher"),
     path('form/', views.show_forms_data, name="form"),
 ]
+# Use forms to ensure the changes
