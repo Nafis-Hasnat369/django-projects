@@ -15,5 +15,5 @@ def teachers_info(request):
 
 def show_forms_data(request):
     form = TeachersRegistration()
-    form.order_fields(field_order=['email', 'last_name', 'first_name'])
+    # form.order_fields(field_order=['email', 'last_name', 'first_name'])
     return render(request, 'forms.html', {'form': form})

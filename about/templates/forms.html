@@ -4,9 +4,12 @@
 
 {% block content %}
 <form action="">
-    <table>
-        {{form}}
-    </table>
+    <!-- <table>
+        {% for field in form %}
+        {{field.label_tag}} <br>
+        {% endfor %}
+    </table> -->
+    {{form.as_p}}
     <input type="button" value="Submit">
 </form>
 {% endblock content %}
