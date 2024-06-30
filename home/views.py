@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from django.views import View
 
 # Create your views here.
 
@@ -12,5 +13,7 @@ def projects(request):
     return HttpResponse("This is my projects page! (projects/)")
 
 
-def contact(request):
-    return HttpResponse("This is my contact page! (contact/)")
+# class base view
+class contact(View):
+    def get(self, request):
+        return render(request, 'contact.html')
